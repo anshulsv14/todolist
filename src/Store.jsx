@@ -1,15 +1,11 @@
-import React from 'react'
-import {configureStore} from '@reduxjs/toolkit'
 
-import mytodo from './Todoslice'
-
-
-
-
-const store = configureStore({
+import {configureStore} from "@reduxjs/toolkit";
+import todoAns from "./Todoslice";
+const store=configureStore({
     reducer:{
-     
-        mytask:mytodo
-    }})
+        todo:todoAns
+    }
+})
 export default store;
+
 
